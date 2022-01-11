@@ -1,0 +1,13 @@
+{
+    "homepage": "https://aguidis.github.io/alyra-voting-dapp",
+    "name": "root",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@truffle/hdwallet-provider": "^2.0.0",
+        "dotenv": "^8.2.0"
+    },
+    "scripts": {
+        "deploy": "gh-pages -d build"
+    }
+}

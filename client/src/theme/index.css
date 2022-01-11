@@ -1,0 +1,115 @@
+/* Sticky footer */
+html, body, #root {
+    height: 100%;
+}
+#root {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1 0 auto;
+    margin-bottom: 3rem;
+}
+footer {
+    flex-shrink: 0;
+}
+/* Modal */
+.modal {
+    display: block;
+    visibility: hidden;
+}
+.modal-show {
+    visibility:visible;
+    background-color: rgba(169, 169, 169, 0.8);
+    transition: opacity 0.2s linear;
+}
+.modal-content {
+    opacity: 0;
+}
+.modal-show .modal-content {
+    opacity: 1;
+    transition: 0.2s linear;
+}
+/* Wallet */
+.wallet-connect {
+    background-color: #2D3748;
+    border-radius: .75rem;
+    padding: .5rem .75rem;
+    color: white;
+    border: none;
+}
+.wallet-connect:hover {
+    background: #1A202C;
+}
+.wallet-box {
+    display: inline-flex;
+    align-items: center;
+    background-color: #2D3748;
+    border-radius: .75rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: white;
+}
+.wallet-box .wb_account-balance {
+    padding: 0 .75rem;
+}
+.wallet-box .wb_account-balance p {
+    margin: 0;
+}
+.wallet-box .wb_account-address {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: middle;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    width: auto;
+    line-height: 1.2;
+    border-radius: .75rem;
+    height: 38px;
+    min-width: 2.5rem;
+    font-size: 1rem;
+    padding: 0 .75rem;
+    background: #1A202C;
+    border: 1px solid transparent;
+    margin: 1px;
+}
+.wallet-box .wb_account-address p {
+    margin: 0;
+    padding-right: .5rem;
+    font-weight: 500;
+}
+/* Stepper */
+.vote-stepper {
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+.vote-stepper > .list-group-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.vote-stepper > .list-group-item i {
+    font-size: 2rem;
+}
+.vote-stepper > .list-group-item:first-child {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.vote-stepper > .list-group-item + .list-group-item {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+/* Admin toolbar */
+.admin-toolbar {
+    justify-content: center;
+    margin: 1.5rem 0 3rem;
+}
+.feature {
+    height: 4rem;
+    width: 4rem;
+    font-size: 2.5rem;
+    margin-top: -1.5rem;
+}
+

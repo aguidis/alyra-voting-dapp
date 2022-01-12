@@ -22,6 +22,23 @@ Cette Dapp a pour but de faciliter l'intération avec le smart contract responsa
 - React v17.0.2
 - Jotai v1.4.9 (state management)
 
-## Commands
+### Directory structure
 
-see Makefile in the project root.
+The application is based on the [Truffle React Box](https://github.com/truffle-box/react-box).
+
+> The structure of `client/src` has been updated to improve clarity and maintainability of the project :
+
+    .
+    ├── build                   # Compiled production ready files
+    ├── components              # Stateless/statefull components organized by feature
+    │   ├── bloc                # Smallest component used accross multi pages
+    │   ├── section             # Layout related components
+    │   ├── vote-steps          # Dedicated vote step components with their own distinct logic
+    │   └── wallet              # Wallet related components
+    ├── constants               # Contains enums or fixed value used multiple times in the app
+    ├── contracts               # Artifacts of your contracts compilation
+    └── migrations              # Migration js files
+
+### Commands
+
+see [Makefile](Makefile) in the project root.

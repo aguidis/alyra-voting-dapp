@@ -1,4 +1,5 @@
 {
+    "homepage": "https://aguidis.github.io/alyra-voting-dapp",
     "name": "client",
     "version": "0.1.0",
     "private": true,

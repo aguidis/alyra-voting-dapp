@@ -7,6 +7,7 @@ import {
     proposalsAtom,
     voterDetailsAtom,
     winningProposalAtom,
+    voteEqualityAtom,
 } from '../state'
 
 const useWeb3 = () => {
@@ -17,6 +18,7 @@ const useWeb3 = () => {
     const setProposals = useUpdateAtom(proposalsAtom)
     const setVoterDetails = useUpdateAtom(voterDetailsAtom)
     const setWinningProposal = useUpdateAtom(winningProposalAtom)
+    const setVoteEquality = useUpdateAtom(voteEqualityAtom)
 
     const addEventListener = (eventName, successCallback) => {
         contract.events[eventName]({}).on('data', successCallback).on('error', console.error)
@@ -107,6 +109,8 @@ const useWeb3 = () => {
             .call()
 
         if (proposalVoteCountEqualities.length > 0) {
+            setVoteEquality(true)
+
             return
         }
 

@@ -48,6 +48,7 @@ export const whiteListedVotersAtom = atom([])
 export const proposalsAtom = atom([])
 
 export const winningProposalAtom = atom(null)
+export const voteEqualityAtom = atom(false)
 
 export const voterDetailsAtom = atom(null)
 

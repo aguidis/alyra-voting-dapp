@@ -1,12 +1,6 @@
 import PropTypes from 'prop-types'
 
-const Proposal = ({
-    description,
-    voteCount,
-    proposalId = 0,
-    voteCallback,
-    canVote = false,
-}) => {
+const Proposal = ({ description, voteCount, proposalId = 0, voteCallback, canVote = false }) => {
     return (
         <div className="col-lg-6 col-xxl-4 mb-5">
             <div className="card bg-light border-0 h-100">

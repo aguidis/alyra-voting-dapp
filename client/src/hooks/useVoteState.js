@@ -10,6 +10,7 @@ import {
     voterDetailsAtom,
     canVoteAtom,
     winningProposalAtom,
+    voteEqualityAtom,
 } from '../state'
 
 const useVoteState = () => {
@@ -22,6 +23,7 @@ const useVoteState = () => {
     const voterDetails = useAtomValue(voterDetailsAtom)
     const canVote = useAtomValue(canVoteAtom)
     const winningProposal = useAtomValue(winningProposalAtom)
+    const voteEquality = useAtomValue(voteEqualityAtom)
 
     return {
         contractOwner,
@@ -33,6 +35,7 @@ const useVoteState = () => {
         voterDetails,
         canVote,
         winningProposal,
+        voteEquality,
     }
 }
 

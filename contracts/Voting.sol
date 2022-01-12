@@ -242,12 +242,10 @@ contract Voting is Ownable {
             winningProposalId = _proposalId;
 
             delete proposalVoteCountEqualities;
-        } else if (
-            _proposalId != winningProposalId &&
-            votedProposal.voteCount == tempWinningProposal.voteCount
-        ) {
+        } else if (votedProposal.voteCount == tempWinningProposal.voteCount) {
             // Handle potental vote equality
-            proposalVoteCountEqualities.push(winningProposalId);
+            proposalVoteCountEqualities.push(winningProposalId); // Store old winner
+            winningProposalId = _proposalId; // Update new winner
         }
 
         totalVotes++;

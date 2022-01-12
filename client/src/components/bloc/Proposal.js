@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 const Proposal = ({
     description,
-    voteCount = 0,
+    voteCount,
     proposalId = 0,
     voteCallback,
     canVote = false,

@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import useWeb3 from './hooks/useWeb3'
 import useWallet from './hooks/useWallet'
@@ -42,13 +42,13 @@ const App = () => {
     }, [])
 
     return (
-        <HashRouter>
+        <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/voters" element={<Voters />} />
                 <Route path="/proposals" element={<Proposals />} />
             </Routes>
-        </HashRouter>
+        </BrowserRouter>
     )
 }
 

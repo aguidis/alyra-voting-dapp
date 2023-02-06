@@ -1,17 +1,17 @@
-# Défi #3 - Voting Dapp
+# Challenge #3 - Voting Dapp
 
-Cette Dapp a pour but de faciliter l'intération avec le smart contract responsable du bon déroulement du vote.
+This Dapp aims to facilitate the integration with the smart contract responsible for the smooth running of the vote.
 
-## Rappels du vote
+## Voting reminders
 
-- Le vote n'est pas secret
-- Chaque électeur peut voir les votes des autres
-- Le gagnant est déterminé à la majorité simple
-- La proposition qui obtient le plus de voix l'emporte
+- The vote is not secret
+- Each voter can see the votes of others
+- The winner is determined by a simple majority
+- The proposal with the most votes wins
 
-## Stack Back
+## Back Stack
 
-- Ethereum in memory blockchain (Ganache Version 2.5.4 (GUI or CLI) + Deployment on Ropsten test network
+- Ethereum in-memory blockchain (Ganache Version 2.5.4 (GUI or CLI) + Deployment on the Ropsten test network
 - Truffle v5.4.18 (core: 5.4.18)
 - Solidity v0.8.10 (solc-js)
 - Node v15.5.0
@@ -26,19 +26,19 @@ Cette Dapp a pour but de faciliter l'intération avec le smart contract responsa
 
 The application is based on the [Truffle React Box](https://github.com/truffle-box/react-box).
 
-> The structure of `client/src` has been updated to improve clarity and maintainability of the project :
+> The structure of `client/src` has been updated to improve the clarity and maintainability of the project :
 
     .
-    ├── build                   # Compiled production ready files
-    ├── components              # Stateless/statefull components organized by feature
-    │   ├── bloc                # Smallest component used accross multi pages
-    │   ├── section             # Layout related components
-    │   ├── vote-steps          # Dedicated vote step components with their own distinct logic
-    │   └── wallet              # Wallet related components
-    ├── constants               # Contains enums or fixed value used multiple times in the app
-    ├── contracts               # Artifacts of your contracts compilation
-    └── migrations              # Migration js files
+    ├── build # Compiled files ready for production.
+    ├── components # Stateless or complete components organized by functionality.
+    │ ├─── block # The smallest component used on multiple pages
+    │ ├─── section # Layout-related components
+    │ ├─── vote-steps # Components dedicated to the voting steps with their own logic.
+    │ └─── wallet # Wallet related components.
+    ├── constants # Contains enums or fixed values used multiple times in the application.
+    ├─── contracts # Artifacts from the compilation of your contracts
+    └─── migrations # Migration js files
 
 ### Commands
 
-see [Makefile](Makefile) in the project root.
+see [Makefile](Makefile) at the root of the project.
